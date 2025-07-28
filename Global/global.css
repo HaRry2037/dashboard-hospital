@@ -1,0 +1,92 @@
+html, body {
+    max-width: 100vw;
+   max-height: 100vh;
+    overflow-x: hidden;
+  }
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    
+
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Medium.ttf) format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(./fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+@font-face{
+    font-family: 'Inter';
+    src: url(./fonts/Inter/static/Inter_28pt-Bold.ttf) format('truetype');
+    font-weight: 700;
+}
+@font-face{
+    font-family: 'Inter';
+    src: url(./fonts/Inter/static/Inter_28pt-SemiBold.ttf) format('truetype');
+    font-weight: 600;
+}
+@font-face{
+    font-family: 'Inter';
+    src: url(./fonts/Inter/static/Inter_28pt-Medium.ttf) format('truetype');
+    font-weight: 500;
+}
+@font-face{
+    font-family: 'Inter';
+    src: url(./fonts/Inter/static/Inter_28pt-Regular.ttf) format('truetype');
+    font-weight: 400;
+}
+
+:root{
+    --Poppins:"Poppins";
+    --Inter:"Inter";
+    --Dark-Slate-Gray:#274760 ; 
+    --Jordy-Blue: #86bbf1;
+    --Celtic-Blue:#307bc4;
+    --Celtic-blue-shadow:rgba(48,123,196,0.6);
+    --Azureish-White: #D2EAEF;
+    --Black:#000000;
+    --white: #ffffff;
+    --Baby-Blue-Eyes:#a2cdf0;
+}
+h1{
+    font-family: "Inter";
+    font-size: 66px;
+    color:var(--Dark-Slate-Gray);
+    font-weight: 700;
+}
+h2{
+    color:var(--Celtic-Blue);
+    font-size: 25px;
+}
+.content-heading{
+    font-size: 53px;
+}
+.nav-item{
+    font-size:16px;
+}
+
+
+/* Expert Doctor Icon*/
+.expert-doctor-socials{
+    color: var(--Baby-Blue-Eyes);
+}

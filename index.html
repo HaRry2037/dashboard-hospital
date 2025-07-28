@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Centered Navbar</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./Global/global.css" />
+    <style></style>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav class="navbar  navbar-custom py-3">
+        <!-- Outer container: max width 1440px -->
+        <div
+          class="custom-container d-flex align-items-center justify-content-between"
+        >
+          <!-- Left Spacer -->
+          <div style="width: 108px"></div>
+
+          <!-- Center Navigation (fixed width 1296px) -->
+          <div class="center-nav  mx-auto">
+            <ul
+              class="navbar-nav flex-row justify-content-center align-items-center"
+            >
+              <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Find Doctor</a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  >Pages</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Page 1</a></li>
+                  <li><a class="dropdown-item" href="#">Page 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="icon-group d-flex align-items-center">
+            <i class="bi bi-search navbar-icons"></i>
+            <i class="bi bi-list navbar-icons"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-section">
+          <div id="hero-left">
+            <h1 id="hero-heading">Your Partner In Health and Wellness</h1>
+            <p id="hero-paragraph">
+              We are committed to providing you with best healthcare service to
+              live you healthier and happier.
+            </p>
+            <p id="span-text">
+              <img src="./Images/SVG.png" alt="" /> See how we work
+            </p>
+          </div>
+          <div id="hero-right">
+            <img
+              src="./Images/herocover.png"
+              alt="Hero Image"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-bar">
+      <div class="contact-info">
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="./Images/contact.png" alt="" />
+          </div>
+          <div class="info-text">
+            <div class="info-label">Hotline</div>
+            <div class="info-detail">123-456-7890</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="./Images/stetho.png" alt="" />
+          </div>
+          <div class="info-text">
+            <div class="info-label">Ambulence</div>
+            <div class="info-detail">876-256-876</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <div class="info-icon">
+            <img src="./Images/location.png" alt="" />
+          </div>
+          <div class="info-text">
+            <div class="info-label">Location</div>
+            <div class="info-detail">New York, US</div>
+          </div>
+        </div>
+        <div class="info-item">
+          <button class="book-btn">
+            Book Now <img src="./Images/arrow-right.png " />
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="value-bar">
+      <div class="value-panel">
+        <h2 class="value-heading">Our Values</h2>
+
+        <div class="flex-top">
+          <div class="flex-item">
+            <div class="value-head">
+              <img src="./Images/compassion.png" alt="" />
+              <h3>Compassion</h3>
+            </div>
+            <div class="value-content">
+              We understand that seeking medical care can be a stressful and
+              emotional experience, and we strive to create a welcoming and
+              supportive environment that puts our patients at ease and every
+              one.
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="value-head">
+              <img src="./Images/Excellence.png" alt="" />
+              <h3>Excellence</h3>
+            </div>
+            <div class="value-content">
+              We are committed to providing excellent medical care and services
+              to our patients. We believe in continuously improving our skills,
+              knowledge, and resources to ensure that we deliver the highest
+              quality care possible.
+            </div>
+          </div>
+
+          <div class="flex-item">
+            <div class="value-head">
+              <img src="./Images/Integrity.png" alt="" />
+              <h3>Integrity</h3>
+            </div>
+            <div class="value-content">
+              We believe in practicing medicine with integrity and honesty. We
+              are transparent in our communication and decision-making
+              processes, and we always put our patient's interests first &
+              provide best solution.
+            </div>
+          </div>
+        </div>
+        <div class="flex-bottom">
+          <div class="flex-item">
+            <div class="value-head">
+              <img
+                src="./Images/compassion.png"
+                height="45px"
+                width="45px"
+                alt=""
+              />
+              <h3>Respect</h3>
+            </div>
+            <div class="value-content">
+              We treat all individuals with respect and dignity, regardless of
+              their background, beliefs, or circumstances. We believe that every
+              person deserves to be treated with compassion and kindness.
+            </div>
+          </div>
+          <div class="flex-item">
+            <div class="value-head">
+              <img
+                src="./Images/compassion.png"
+                height="45px"
+                width="45px"
+                alt=""
+              />
+              <h3>Teamwork</h3>
+            </div>
+            <div class="value-content">
+              We believe in working collaboratively with our team membersvand
+              other healthcare professionals to provide comprehensive and
+              effective care to our patients.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about-bar">
+      <div class="about-us">
+        <div class="about-us-image">
+          <img src="./Images/Group 8.png" alt="" />
+        </div>
+        <div class="about-us-description">
+          <h2 class="about-heading">About Us</h2>
+          <h3 class="pro-heading">Pro-health</h3>
+          <div class="about-us-paragraph">
+            <img src="./Images/arrow-blue.png" alt="" />
+            <div class="description-text">
+              <div class="description-big-text">
+                ProHealth is a team of experienced medical professionals
+              </div>
+              <div class="description-small-text">
+                Dedicated to providing top-quality healthcare services. We
+                believe in a holistic approach to healthcare that focuses on
+                treating the whole person, not just the illness or symptoms.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="Department-container">
+      <div class="Department">
+        <div class="Department-card"></div>
+        <div class="department-desc">
+          <h2 class="centeral-desc">Department</h2>
+          <div class="slick-container">
+            <div class="slick-slide">
+              <img src="./Images/emergencydep.png" alt="" />
+              <p class="slick-des">Emergency Department</p>
+            </div>
+            <div class="slick-slide">
+              <img src="./Images/pediatric_dep.png" alt="" />
+              <p class="slick-des">Pediatric <br />Department</p>
+            </div>
+            <div class="slick-slide">
+              <img src="./Images/pediatric_dep.png" alt="" />
+              <p class="slick-des">Gynecology Department</p>
+            </div>
+
+            <div class="slick-slide">
+              <img src="./Images/pediatric_dep.png" alt="" />
+              <p class="slick-des">Cardiology Department</p>
+            </div>
+            <div class="slick-slide">
+              <img src="./Images/pediatric_dep.png" alt="" />
+              <p class="slick-des">
+                Neurology <br />
+                Department
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="award-container">
+      <div class="award">
+        <div class="award-heading">
+          <h2>Departments</h2>
+        </div>
+        <div class="award-flex">
+          <div class="award-box">
+            <div class="inside-flex">
+              <div class="award-image">
+                <img src="./Images/award-image.png" alt="" />
+              </div>
+              <div class="award-head">
+                Malcolm Baldrige National Quality Award
+              </div>
+            </div>
+            <div class="award-desc">
+              This award recognizes healthcare organizations that have
+              demonstrated excellence in leadership, strategic planning,
+              customer and employee satisfaction, and operational efficiency.
+            </div>
+          </div>
+          <div class="award-box">
+            <div class="inside-flex">
+              <div class="award-image">
+                <img src="./Images/award-image.png" alt="" />
+              </div>
+              <div class="award-head">HIMSS Davies Award</div>
+            </div>
+            <div class="award-desc">
+              This award recognizes healthcare organizations that have used
+              health information technology to improve patient outcomes and
+              reduce costs.
+            </div>
+          </div>
+          <div class="award-box">
+            <div class="inside-flex">
+              <div class="award-image">
+                <img src="./Images/award-image.png" alt="" />
+              </div>
+              <div class="award-head">
+                Healthgrades National’s Best Hospital
+              </div>
+            </div>
+            <div class="award-desc">
+              This recognition is given to hospitals that have achieved high
+              ratings for clinical quality and patient safety across multiple
+              specialties and procedures.
+            </div>
+          </div>
+          <div class="award-box">
+            <div class="inside-flex">
+              <div class="award-image">
+                <img src="./Images/award-image.png" alt="" />
+              </div>
+              <div class="award-head">
+                Joint Commission Gold Seal of Approval
+              </div>
+            </div>
+            <div class="award-desc">
+              This recognition is given to hospitals that have met rigorous
+              standards for patient safety and quality of care.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="review-container">
+      <div class="reviews">
+        <div class="review-heading">
+          <h2 class="review-heading-big">Some Reviews</h2>
+          <h3 class="review-heading-small">OF OUR CLIENTS</h3>
+        </div>
+        <div class="client-reviews">
+          <div class="customer-review">
+            <div class="customer-names">
+              <div class="customer-info">
+                <div class="customer-inside-flex">
+                  <div class="customer-image">
+                    <img src="./Images/customer1.png" alt="" />
+                  </div>
+                  <div class="customer-details">
+                    <div class="customer-name">Paulo Hubert</div>
+                    <div class="customer-address">New York, USA</div>
+                  </div>
+                </div>
+                <div class="customer-inside-flex">
+                  <div class="customer-image">
+                    <img src="./Images/customer2.png" alt="" />
+                  </div>
+                  <div class="customer-details">
+                    <div class="customer-name">LAURENCE VENDETTA</div>
+                    <div class="customer-address">CALIFORNIA, USA</div>
+                  </div>
+                </div>
+                <div class="customer-inside-flex">
+                  <div class="customer-image">
+                    <img src="./Images/customer3.png" alt="" />
+                  </div>
+                  <div class="customer-details">
+                    <div class="customer-name">CASSANDRA RAUL</div>
+                    <div class="customer-address">FLORIDA</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="svg-line-container">
+              <svg height="430px" width="2">
+                <line
+                  x1="5"
+                  y1="0"
+                  x2="1"
+                  y2="100%"
+                  stroke="var(--Celtic-Blue)"
+                  stroke-width="2"
+                />
+                <circle cx="3" cy="30" r="5" fill="var(--Celtic-Blue)" />
+                <circle cx="3" cy="150" r="9" fill="var(--Celtic-Blue)" />
+                <circle cx="3" cy="270" r="5" fill="var(--Celtic-Blue)" />
+              </svg>
+            </div>
+            <div class="review-paragraph">
+              <div class="comma-image">
+                <img src="./Images/comma-image.png" alt="" />
+              </div>
+              <div class="customer-paragraph">
+                The pediatrician was great with him and made him feel at ease,
+                and the entire staff was kind and attentive. I recently had to
+                bring my child to ProHealth for a minor injury, and I was so
+                impressed with the care he received.
+                <div class="customer-rating">
+                  <img src="./Images/rating-image.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="backseat-container">
+      <div class="backseat">
+        <div class="backseat-elements">
+          <div class="backseat-heading">
+            <h2 class="backseat-heading-big">
+              Don’t Let Your Health <br />
+              Take a Backseat!
+            </h2>
+
+            <p class="backseat-paragraph">
+              Schedule an appointment with one of our <br />
+              experienced medical professionals today!
+            </p>
+          </div>
+          <div class="backseat-image">
+            <img src="./Images/backseat-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="blog-container">
+      <div class="blog">
+        <div class="blog-heading">
+          <h3 class="small-heading">BLOG POSTS</h3>
+          <h2 class="big-heading">LATEST UPDATE</h2>
+        </div>
+        <div class="blog-posts">
+          <div class="blog-post">
+            <div class="blog-image">
+              <img src="./Images/blog-post1.png" alt="" />
+            </div>
+            <div class="blog-card">
+              <div class="blog-inside-content">
+                <div class="blog-date"><p class="date">May 1, 2023</p></div>
+                <div class="soc-med-icon">
+                  <img src="./Images/fac-icon.png" alt="" />
+                  <img src="./Images/linkedin.png" alt="" />
+                  <img src="./Images/twitter.png" alt="" />
+                </div>
+              </div>
+              <div class="blog-content">
+                <h3>
+                  The Benefits of Mindfulness Meditation for Stress and Anxiety
+                </h3>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div class="blog-image">
+              <img src="./Images/blog-post2.png" alt="" />
+            </div>
+            <div class="blog-card">
+              <div class="blog-inside-content">
+                <div class="blog-date"><p class="date">May 1, 2023</p></div>
+                <div class="soc-med-icon">
+                  <img src="./Images/fac-icon.png" alt="" />
+                  <img src="./Images/linkedin.png" alt="" />
+                  <img src="./Images/twitter.png" alt="" />
+                </div>
+              </div>
+              <div class="blog-content">
+                <h3>
+                  The Importance of Regular Cancer Screenings and Early
+                  Detection
+                </h3>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+          <div class="blog-post">
+            <div class="blog-image">
+              <img src="./Images/blog-post3.png" alt="" />
+            </div>
+            <div class="blog-card">
+              <div class="blog-inside-content">
+                <div class="blog-date"><p class="date">May 1, 2023</p></div>
+                <div class="soc-med-icon">
+                  <img src="./Images/fac-icon.png" alt="" />
+                  <img src="./Images/linkedin.png" alt="" />
+                  <img src="./Images/twitter.png" alt="" />
+                </div>
+              </div>
+              <div class="blog-content">
+                <h3>Healthy Eating on a Budget: Tips and Strategies</h3>
+                <p>Learn More</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-container">
+      <div class="form">
+        <div class="form-left-side">
+          <h3>Book an</h3>
+          <h2>Appointment</h2>
+          <form>
+            <div class="input-field">
+              <div class="first-input-field">
+                <div class="field">
+                  <label for="Name">Name</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="Name"
+                    id=""
+                    placeholder="Write your name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="Phone-Number">Phone-number</label>
+                  <br />
+                  <input
+                    type="number"
+                    name="Name"
+                    id=""
+                    placeholder="Write your number"
+                  />
+                </div>
+              </div>
+              <div class="medical-record">
+                <div class="field">
+                  <label for="Medical-record-number"
+                    >Medical record number</label
+                  >
+                  <br />
+                  <input
+                    type="number"
+                    name="Name"
+                    id=""
+                    placeholder="Write your medical record number"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="dateandtime">
+              <div class="input-group">
+                <div class="field">
+                  <label for="Preferred">Preferred Date</label>
+                  <br />
+                  <div class="custom-wrapper">
+                    <!-- <span class="date-icon">&#128197</span> -->
+                    <input type="date" class="custom-date" name="" id="" />
+                  </div>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="field">
+                  <label for="Preferred">Preferred time</label>
+                  <br />
+
+                  <input type="time" name="" id="" />
+                </div>
+              </div>
+            </div>
+            <div class="field">
+              <label for="Reason">Reason For Visit</label>
+              <div class="radio-group">
+                <label for="Routine-checkup"
+                  ><input
+                    type="radio"
+                    name="reason"
+                    id=""
+                    class="first-radio-bar"
+                  />
+
+                  <p
+                    style="
+                      margin-left: 12px;
+                      margin-top: 14px;
+                      margin-right: 29px;
+                    "
+                  >
+                    Routine checkup
+                  </p>
+                </label>
+                <label for="New-Patient-visit"
+                  ><input type="radio" name="reason" id="" />
+                  <p
+                    style="
+                      margin-left: 12px;
+                      margin-top: 14px;
+                      margin-right: 29px;
+                    "
+                  >
+                    New Patient visit
+                  </p>
+                </label>
+                <div class="newline" style="width: 100%"></div>
+
+                <label for="Specific-Concern"
+                  ><input type="radio" name="reason" id="" />
+                  <p
+                    style="
+                      margin-left: 12px;
+                      margin-top: 14px;
+                      margin-right: 29px;
+                    "
+                  >
+                    Specific Concern
+                  </p>
+                </label>
+              </div>
+            </div>
+            <div class="field">
+              <label for="">Department</label>
+              <div class="radio-group-1">
+                <label for="Pediatrics">
+                  <input
+                    type="radio"
+                    name="dept"
+                    id="Pediatrics"
+                    style="margin-right: 12px"
+                  />
+                  <span style="margin-left: 12px; margin-right: 29px"
+                    >Pediatrics</span
+                  >
+                </label>
+
+                <label for="Obstetrics-Gynecology">
+                  <input
+                    type="radio"
+                    name="dept"
+                    id="Obstetrics-Gynecology"
+                    style="margin-right: 12px"
+                  />
+                  <span style="margin-left: 12px; margin-right: 29px"
+                    >Obstetrics and Gynecology</span
+                  >
+                </label>
+
+                <label for="Cardiology">
+                  <input
+                    type="radio"
+                    name="dept"
+                    id="Cardiology"
+                    style="margin-right: 12px"
+                  />
+                  <span style="margin-left: 12px; margin-right: 29px"
+                    >Cardiology</span
+                  >
+                </label>
+
+                <div class="newline" style="width: 100%"></div>
+
+                <label for="Neurology">
+                  <input
+                    type="radio"
+                    name="dept"
+                    id="Neurology"
+                    style="margin-right: 12px"
+                  />
+                  <span style="margin-left: 12px; margin-right: 29px"
+                    >Neurology</span
+                  >
+                </label>
+              </div>
+            </div>
+
+            <div class="submit-button">
+              <button type="submit">
+                Submit <img src="./Images/arrow-right.png " />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="form-right-side">
+          <div class="abstract-image">
+            <img src="./Images/abstract-image.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-bar">
+      <div class="accordion-panel">
+        <div class="accordion-headings">
+          <h3>What People</h3>
+          <h2>Usually Asked</h2>
+        </div>
+        <div class="accordions">
+          <div class="acc-wrapper">
+            <button
+              class="accordion"
+              style="
+                font-family: var(--Inter);
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--Dark-Slate-Gray);
+
+                width: 856px;
+                height: 66px;
+
+                padding: 16px auto 16px 30px;
+              "
+            >
+              <span class="accordion-text">
+                What services does ProHealth offer?
+              </span>
+              <img
+                class="accordion-arrow"
+                src="./Images/accordion-arrow-down.png"
+                alt=""
+              />
+            </button>
+            <div class="panel">
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesent voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-wrapper">
+            <button
+              class="accordion"
+              style="
+                font-family: var(--Inter);
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--Dark-Slate-Gray);
+
+                width: 856px;
+                height: 66px;
+
+                padding: 16px auto 16px 30px;
+              "
+            >
+              <span class="accordion-text">
+                How do I schedule an appointment with ProHealth?
+              </span>
+              <img
+                class="accordion-arrow"
+                src="./Images/accordion-arrow-down.png"
+                alt=""
+              />
+            </button>
+
+            <div class="panel">
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesent voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-wrapper">
+            <button
+              class="accordion"
+              style="
+                font-family: var(--Inter);
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--Dark-Slate-Gray);
+
+                width: 856px;
+                height: 66px;
+                padding: 16px auto 16px 30px;
+              "
+            >
+              <span class="accordion-text"> Do you accept insurance? </span>
+              <img
+                class="accordion-arrow"
+                src="./Images/accordion-arrow-down.png"
+                alt=""
+              />
+            </button>
+            <div class="panel">
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesent voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui.
+              </p>
+            </div>
+          </div>
+
+          <div class="acc-wrapper">
+            <button
+              class="accordion"
+              style="
+                font-family: var(--Inter);
+                font-weight: 500;
+                font-size: 18px;
+                color: var(--Dark-Slate-Gray);
+
+                width: 856px;
+                height: 66px;
+                padding: 16px auto 16px 30px;
+              "
+            >
+              <span class="accordion-text">
+                What should I bring to my appointment?
+              </span>
+              <img
+                class="accordion-arrow"
+                src="./Images/accordion-arrow-down.png"
+                alt=""
+              />
+            </button>
+            <div class="panel">
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesent voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="acc-wrapper">
+          <button
+            class="accordion"
+            style="
+              font-family: var(--Inter);
+              font-weight: 500;
+              font-size: 18px;
+              color: var(--Dark-Slate-Gray);
+
+              width: 856px;
+              height: 66px;
+              padding: 16px auto 16px 30px;
+            "
+          >
+            <span class="accordion-text">
+              How do I request a prescription refill?
+            </span>
+            <img
+              class="accordion-arrow"
+              src="./Images/accordion-arrow-down.png"
+              alt=""
+            />
+          </button>
+          <div class="panel">
+            <p>
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui
+              blanditiis praesent voluptatum deleniti atque corrupti quos
+              dolores et quas molestias excepturi sint occaecati cupiditate non
+              provident, similique sunt in culpa qui.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hospital-images-bar">
+      <div class="hospital-images">
+        <div class="hospital-images-top">
+          <img src="./Images/medical_slogan1.png" alt="" />
+          <img src="./Images/drug_store_tagline.png" alt="" />
+          <img src="./Images/medical-slogon3.png" alt="" />
+          <img src="./Images/hospital-slogan.png" alt="" />
+        </div>
+        <div class="hospital-images-bottom">
+          <img src="./Images/pharmacy-slogon-1.png" alt="" />
+          <img src="./Images/medical-slogan.png" alt="" />
+          <img src="./Images/pharma-slogan-2.png" alt="" />
+          <img src="./Images/health-care-slogan1.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <div class="footer-panel">
+      <div class="footer-section">
+        <div class="footer-image">
+          <div class="footer-shield-image">
+            <img src="./Images/sheild-image.png" alt="" />
+          </div>
+        </div>
+        <div class="flex-object-row">
+          <div class="flex-object-coloumn-1">
+            <div class="black-box"></div>
+            <div class="footer-location">
+              <img src="./Images/location-footer.png" alt="" /><span
+                class="loc-name"
+                >123 Anywhere St., Any City 12345</span
+              >
+            </div>
+            <div class="footer-contact">
+              <img src="./Images/footer-contact.png" alt="" /><span
+                class="cont-num"
+              ></span
+              >123-456-7890
+            </div>
+            <div class="footer-email">
+              <img src="./Images/email-footer.png" alt="" /><span
+                class="ema-add"
+                >hellocallcenter@gmail.com</span
+              >
+            </div>
+          </div>
+          <div class="flex-object-coloumn-2">
+            <span>About-us</span>
+            <span>Departments</span>
+            <span>Doctors</span>
+            <span>Time-table</span>
+            <span>Appointment</span>
+            <span>Testimonials</span>
+          </div>
+          <div class="flex-object-coloumn-3">
+            <span>Blog</span>
+            <span>Contact us</span>
+            <span>FAQS</span>
+            <span>Privacy </span>
+            <span>Blog</span>
+          </div>
+          <div class="flex-object-coloumn-4">
+            <h3>Be Our Subscriber</h3>
+            <span class="coloumn-4-span ">To get the latest news about health from our <br/> experts</span>
+            <div class="email-form">
+              <div class="email-input">
+              <input
+                type="email"
+                name=""
+                id=""
+                placeholder="example@email.com"
+              />
+              </div>
+              <div class="email-submit">
+                
+                <button type="submit">Submit <span>&rarr;</span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          </div>
+        </div>
+      </div>
+    </div>
+<div class="footer-box">
+          <div class="footer-box-content">
+            <div class="footer-flex">
+              <div class="follow-us">
+                <span>Follow us</span>
+
+              </div>
+              <div class="copyright">
+                <span>Copyright © 2024  All rights reserved.</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+    <script src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
