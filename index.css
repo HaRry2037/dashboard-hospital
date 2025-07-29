@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .custom-container {
   max-width: 1440px;
   width: 100%;
@@ -768,10 +772,12 @@ min-width: 300px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  flex-wrap: wrap;
   padding: 0 72px; /* Add consistent horizontal padding */
   box-sizing: border-box; /* Ensure padding is included in the width */
 }
 .about-us {
+  flex-wrap: wrap;
   display: flex;
   align-items: center;
   justify-content: space-between; /* Distribute image and text */
@@ -788,6 +794,7 @@ min-width: 300px;
   object-fit: contain; /* Ensures the image scales within the container without distortion */
 }
 .about-us-description {
+  flex-wrap: wrap;
   width: 550px;
   height: 371px;
   position: relative;
@@ -1049,7 +1056,7 @@ margin-right: 55px;
 }
 .award-flex {
   display: flex;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   margin-top: 72px;
 }
@@ -1157,23 +1164,27 @@ margin-right: 55px;
   padding-bottom: 12px;
 }
 .customer-paragraph {
+  flex-wrap: wrap;
   font-family: var(--Poppins);
   font-weight: 400;
   font-size: 16px;
   margin-top: 131px;
 }
 .backseat-container {
+  flex-wrap: wrap;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
   margin-top: 49px;
 }
 .backseat {
+  flex-wrap: wrap;
   width: 1296px;
   margin-left: 78px;
   margin-right: 68px;
 }
 .backseat-elements {
+  flex-wrap: wrap;
   height: 412px;
   background: url("./Images/doctorbackground.png");
   display: flex;
@@ -1183,6 +1194,7 @@ margin-right: 55px;
   position: relative;
 }
 .backseat-image img {
+  flex-wrap: wrap;
   top: -125px;
   position: absolute;
   z-index: 2;
@@ -1190,9 +1202,12 @@ margin-right: 55px;
   height: 560px;
 }
 .backseat-heading {
+  /*not working*/ 
+  flex-wrap: wrap; 
   padding: 100px 100px 100px 90px;
 }
 .backseat-heading h2 {
+  flex-wrap: wrap;
   color: var(--white);
   font-size: 53px;
   font-weight: 700;
@@ -1201,6 +1216,7 @@ margin-right: 55px;
   margin-bottom: 23.65px;
 }
 .backseat-heading p {
+  flex-wrap: wrap;
   font-family: var(--Poppins);
   font-weight: 500;
   font-size: 20px;
@@ -1208,6 +1224,7 @@ margin-right: 55px;
 }
 .blog-container {
   max-width: 1440px;
+  flex-wrap: wrap;
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -1427,6 +1444,71 @@ margin-right: 55px;
 .field input[type="date"] {
   accent-color: #f2d;
 }
+
+@media (max-width: 768px) {
+  .blog-container,
+  .form-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 0 16px;
+  }
+
+  .blog {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .blog-posts {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .blog-post {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .blog-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .form {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .form-left-side,
+  .form-right-side {
+    width: 100%;
+  }
+
+  .abstract-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .first-input-field,
+  .dateandtime,
+  .medical-record {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .medical-record input,
+  .field input[type="text"],
+  .field input[type="number"],
+  .field input[type="date"],
+  .field input[type="time"] {
+    width: 100% !important;
+  }
+}
+
 .accordion-bar {
   max-width: 1440px;
   margin: 0 auto;
@@ -1779,3 +1861,53 @@ transform: translateX(-50%)
   opacity:0.50;
 
 }
+
+
+@media (max-width: 1200px) {
+  .customer-review, .review-paragraph, .blog-posts, .backseat-elements, .form, .accordion-headings, .flex-object-row {
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .customer-info, .customer-inside-flex:nth-child(2), .blog-post, .backseat-heading, .form-left-side, .abstract-image img, .flex-object-coloumn-1, .flex-object-coloumn-2, .flex-object-coloumn-3, .flex-object-coloumn-4 {
+    width: 100% !important;
+  }
+
+  .backseat-image img {
+    position: relative;
+    flex-wrap: wrap;
+  }
+  
+    .accordion-bar,
+    .hospital-images-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+    }
+
+    .accordion-panel {
+      width: 100%;
+      margin: 0 auto;
+      height: auto;
+    }
+
+    .accordion-headings h2,
+    .accordion-headings h3 {
+      margin: 0 auto 20px auto;
+      text-align: center;
+    }
+
+    .accordions,
+    .accordion {
+      width: 100% !important;
+    }
+
+    .hospital-images-top,
+    .hospital-images-bottom {
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: center;
+    }
+  }
