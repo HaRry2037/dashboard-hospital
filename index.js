@@ -1,21 +1,24 @@
 const wrappers = document.querySelectorAll(".acc-wrapper");
 
-wrappers.forEach(wrapper => {
-  wrapper.addEventListener("click", function (e) {
-    e.stopPropagation();
+wrappers.forEach((clickedWrapper) => {
+  clickedWrapper.addEventListener("click", function () {
+    const wasActive = clickedWrapper.classList.contains("active");
 
-    const accordion = wrapper.querySelector(".accordion");
-    const panel = wrapper.querySelector(".panel");
-    const arrow = wrapper.querySelector(".accordion-arrow");
+    wrappers.forEach((wrapper) => {
+      wrapper.classList.remove("active");
+      wrapper.querySelector(".panels").style.display = "none";
+      const arrow = wrapper.querySelector(".accordion-arrow");
+      if (arrow) {
+        arrow.src = "./Images/accordion-arrow-up.png";
+      }
+    });
 
-    wrapper.classList.toggle("active");
-
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (!wasActive) {
+      clickedWrapper.classList.add("active");
+      const panels = clickedWrapper.querySelector(".panels");
+      const arrow = clickedWrapper.querySelector(".accordion-arrow");
+      panels.style.display = "block";
       if (arrow) arrow.src = "./Images/accordion-arrow-down.png";
-    } else {
-      panel.style.display = "block";
-      if (arrow) arrow.src = "./Images/accordion-arrow-up.png";
     }
   });
 });
