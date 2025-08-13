@@ -86,42 +86,34 @@
     </div>
     <div class="container-xl">
       <div class="doctor-panels">
-        <div class="options">
-          <div class="box-options">
-            <div class="sort-div">
-              <span class="sort-by">Sort by</span>
-            </div>
-            <ul>
-              <li><button class="All button-options">All</button></li>
-              <li>
-                <button class="Cardiology button-options">Cardiology</button>
-              </li>
-              <li>
-                <button class="Emergency button-options">Emergency</button>
-              </li>
-              <li>
-                <button class="Pediatric button-options">Pediatric</button>
-              </li>
-              <li><button class="Others button-options">Others</button></li>
-              <li>
-                <button class="Psychiatry button-options">Psychiatry</button>
-              </li>
-            </ul>
-          </div>
-          <div class="menu-buttons">
-            <div class="menu-span">
-              <span class="menu-options">Showing 12 items</span>
-            </div>
-            <div class="btn-group" role="group" aria-label="View toggle">
-              <button type="button" class="btn view-toggle-btn">
-                <i class="bi bi-grid view-icon"></i>
-              </button>
-              <button type="button" class="btn view-toggle-btn">
-                <i class="bi bi-list view-icon"></i>
-              </button>
-            </div>
-          </div>
-        </div>
+ <div class="options-container d-flex align-items-center flex-nowrap" style="gap: 154px;">
+  <div class="d-flex align-items-center flex-nowrap" style="gap: 29px;">
+    <span class="sort-by">Sort by</span>
+    <div class="d-flex align-items-center flex-nowrap" style="gap: 20px;">
+      <button type="button" class="btn btn-custom-filter ">All</button>
+      <button type="button" class="btn btn-custom-filter">Cardiology</button>
+      <button type="button" class="btn btn-custom-filter">Emergency</button>
+      <button type="button" class="btn btn-custom-filter">Pediatric</button>
+      <button type="button" class="btn btn-custom-filter">Others</button>
+      <button type="button" class="btn btn-custom-filter">Psychiatry</button>
+    </div>
+  </div>
+  <div class="d-flex align-items-center flex-nowrap" style="gap: 29px;">
+    <span class="showing-items-text">Showing 12 items</span>
+    <div class="view-toggle-group d-flex align-items-center flex-nowrap" style="gap: 15px;" role="group">
+      <button type="button" class="btn btn-view ">
+        <i class="bi bi-grid-fill"></i>
+      </button>
+      <button type="button" class="btn btn-view">
+        <i class="bi bi-list"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+
+
+
         <div class="doctor-grid">
           <div class="doctor-card">
             <div class="doctor-image">
