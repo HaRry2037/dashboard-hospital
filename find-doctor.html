@@ -1,20 +1,20 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Find Doctor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./finddoctor.css" />
+    <link rel="stylesheet" href="./Global/global.css" />
   </head>
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-  />
-  <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="./finddoctor.css" />
-  <link rel="stylesheet" href="./Global/global.css" />
   <body>
     <div class="hero-nav">
       <div class="hero-container">
@@ -84,374 +84,449 @@
         </div>
       </div>
     </div>
-    <div class="container-xl">
+    <div class="container-xl" style="display: block;">
       <div class="doctor-panels">
- <div class="options-container d-flex align-items-center flex-nowrap" style="gap: 154px;">
-  <div class="d-flex align-items-center flex-nowrap" style="gap: 29px;">
-    <span class="sort-by">Sort by</span>
-    <div class="d-flex align-items-center flex-nowrap" style="gap: 20px;">
-      <button type="button" class="btn btn-custom-filter ">All</button>
-      <button type="button" class="btn btn-custom-filter">Cardiology</button>
-      <button type="button" class="btn btn-custom-filter">Emergency</button>
-      <button type="button" class="btn btn-custom-filter">Pediatric</button>
-      <button type="button" class="btn btn-custom-filter">Others</button>
-      <button type="button" class="btn btn-custom-filter">Psychiatry</button>
-    </div>
-  </div>
-  <div class="d-flex align-items-center flex-nowrap" style="gap: 29px;">
-    <span class="showing-items-text">Showing 12 items</span>
-    <div class="view-toggle-group d-flex align-items-center flex-nowrap" style="gap: 15px;" role="group">
-      <button type="button" class="btn btn-view ">
-        <i class="bi bi-grid-fill"></i>
-      </button>
-      <button type="button" class="btn btn-view">
-        <i class="bi bi-list"></i>
-      </button>
-    </div>
-  </div>
-</div>
+        <div class="options-container d-flex align-items-center justify-content-between flex-nowrap" style="gap: 28px">
+          <div class="mobile-sort-by-dropdown dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Sort By
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </div>
+          <div class="desktop-sort-by-dropdown d-flex align-items-center overflow-x-hidden" style="gap: 20px">
+            <span class="sort-by text-nowrap">Sort by</span>
+            <div
+              class="d-flex align-items-center overflow-x-auto flex-nowrap flex-shrink-1"
+              style="gap: 20px"
+            >
+              <button type="button" class="btn btn-custom-filter">All</button>
+              <button type="button" class="btn btn-custom-filter">
+                Cardiology
+              </button>
+              <button type="button" class="btn btn-custom-filter">
+                Emergency
+              </button>
+              <button type="button" class="btn btn-custom-filter">
+                Pediatric
+              </button>
+              <button type="button" class="btn btn-custom-filter">
+                Others
+              </button>
+              <button type="button" class="btn btn-custom-filter">
+                Psychiatry
+              </button>
+            </div>
+          </div>
+          <div class="d-flex align-items-center" style="gap: 29px">
+            <span class="showing-items-text text-nowrap">Showing 12 items</span>
+            <div
+              class="view-toggle-group d-flex align-items-center"
+              style="gap: 15px"
+              role="group"
+            >
+              <button type="button" class="btn btn-view">
+                <i class="bi bi-grid-fill"></i>
+              </button>
+              <button type="button" class="btn btn-view">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+          </div>
+        </div>
 
-  <div class="container">
-  <div class="row">
-    <!-- Doctor 1 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-1.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Emergency Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Lisa Chen, MD</h3></div>
-          <div class="doctor-pos">Emergency Medicine Specialist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Chen has over 10 years of experience in emergency medicine
-              and is board certified in emergency medicine. She has a
-              special interest in critical care and trauma management.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-1.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Emergency Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Lisa Chen, MD</h3></div>
+                  <div class="doctor-pos">Emergency Medicine Specialist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Chen has over 10 years of experience in emergency
+                      medicine and is board certified in emergency medicine. She
+                      has a special interest in critical care and trauma
+                      management.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 2 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-2.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Emergency Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Michael Johnson, MD</h3></div>
-          <div class="doctor-pos">Emergency Medicine Specialist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Johnson is a highly experienced emergency medicine physician
-              with over 15 years of experience. He is board-certified in
-              emergency medicine and has a special interest in disaster
-              management.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-2.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Emergency Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name">
+                    <h3>Dr. Michael Johnson, MD</h3>
+                  </div>
+                  <div class="doctor-pos">Emergency Medicine Specialist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Johnson is a highly experienced emergency medicine
+                      physician with over 15 years of experience. He is
+                      board-certified in emergency medicine and has a special
+                      interest in disaster management.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 3 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-3.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Psychiatry Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Karen Lee, MD</h3></div>
-          <div class="doctor-pos">Emergency Department</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Lee is a skilled emergency medicine physician with expertise
-              in the treatment of acute medical conditions. She is
-              board-certified in emergency medicine and has a special interest
-              in cardiac.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-3.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Psychiatry Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Karen Lee, MD</h3></div>
+                  <div class="doctor-pos">Emergency Department</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Lee is a skilled emergency medicine physician with
+                      expertise in the treatment of acute medical conditions.
+                      She is board-certified in emergency medicine and has a
+                      special interest in cardiac.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 4 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-4.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Pediatric Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Sarah Patel, MD</h3></div>
-          <div class="doctor-pos">Pediatrician</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Patel is a compassionate pediatrician with over 15 years
-              of experience. She is board-certified in pediatrics and has a
-              special interest in preventive care and childhood development.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-4.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Pediatric Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Sarah Patel, MD</h3></div>
+                  <div class="doctor-pos">Pediatrician</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Patel is a compassionate pediatrician with over 15
+                      years of experience. She is board-certified in pediatrics
+                      and has a special interest in preventive care and
+                      childhood development.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 5 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-5.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Pediatric Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. David Nguyen, MD</h3></div>
-          <div class="doctor-pos">Pediatrician</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Nguyen is a highly skilled pediatrician with expertise in
-              the treatment of common childhood illnesses and conditions.
-              She is board-certified in pediatrics.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-5.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Pediatric Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. David Nguyen, MD</h3></div>
+                  <div class="doctor-pos">Pediatrician</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Nguyen is a highly skilled pediatrician with expertise
+                      in the treatment of common childhood illnesses and
+                      conditions. She is board-certified in pediatrics.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 6 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-6.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Pediatric Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Susan Bones, MD</h3></div>
-          <div class="doctor-pos">Pediatrician</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Bones is a dedicated pediatrician with a focus on providing
-              comprehensive care to children of all ages. He is board-certified
-              in pediatrics and has a special interest in childhood obesity.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-6.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Pediatric Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Susan Bones, MD</h3></div>
+                  <div class="doctor-pos">Pediatrician</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Bones is a dedicated pediatrician with a focus on
+                      providing comprehensive care to children of all ages. He
+                      is board-certified in pediatrics and has a special
+                      interest in childhood obesity.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 7 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-7.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Emergency Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Lisa Chen, MD</h3></div>
-          <div class="doctor-pos">Cardiologist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Lee is a skilled cardiologist with expertise in the diagnosis
-              and treatment of cardiovascular disease. He is board-certified in
-              cardiology and has a special interest in preventive cardiology.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-7.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Emergency Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Lisa Chen, MD</h3></div>
+                  <div class="doctor-pos">Cardiologist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Lee is a skilled cardiologist with expertise in the
+                      diagnosis and treatment of cardiovascular disease. He is
+                      board-certified in cardiology and has a special interest
+                      in preventive cardiology.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 8 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-8.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Emergency Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Michelle Kim, MD</h3></div>
-          <div class="doctor-pos">Cardiologist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Kim is a renowned cardiologist with over 20 years of experience.
-              She is board-certified in cardiology and has a special interest in
-              the treatment of heart failure and arrhythmias.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-8.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Emergency Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Michelle Kim, MD</h3></div>
+                  <div class="doctor-pos">Cardiologist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Kim is a renowned cardiologist with over 20 years of
+                      experience. She is board-certified in cardiology and has a
+                      special interest in the treatment of heart failure and
+                      arrhythmias.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 9 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-9.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Emergency Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. John Smith, MD</h3></div>
-          <div class="doctor-pos">Cardiologist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Smith is a board-certified cardiologist with extensive
-              experience in the management of complex cardiac conditions. He
-              has a special interest in interventional cardiology.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-9.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Emergency Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. John Smith, MD</h3></div>
+                  <div class="doctor-pos">Cardiologist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Smith is a board-certified cardiologist with extensive
+                      experience in the management of complex cardiac
+                      conditions. He has a special interest in interventional
+                      cardiology.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 10 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-10.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Psychiatry Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Sarah Lee, MD</h3></div>
-          <div class="doctor-pos">Psychiatrist</div>
-          <div class="doctor-paragraph">
-            <p>
-              With more than 15 years of experience learning human psychology
-              and behavior, Dr. Jones is an expert in managing mood disorders
-              and anxiety disorders.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-10.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Psychiatry Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. Sarah Lee, MD</h3></div>
+                  <div class="doctor-pos">Psychiatrist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      With more than 15 years of experience learning human
+                      psychology and behavior, Dr. Jones is an expert in
+                      managing mood disorders and anxiety disorders.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 11 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-11.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Psychiatry Department</span>
-          </div>
-        </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. David Park, MD</h3></div>
-          <div class="doctor-pos">Psychiatrist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Park is a board-certified psychiatrist with over 10 years of
-              experience. He has a special interest in addiction psychiatry and
-              the treatment of substance use disorders.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-11.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Psychiatry Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name"><h3>Dr. David Park, MD</h3></div>
+                  <div class="doctor-pos">Psychiatrist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Park is a board-certified psychiatrist with over 10
+                      years of experience. He has a special interest in
+                      addiction psychiatry and the treatment of substance use
+                      disorders.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
 
-    <!-- Doctor 12 -->
-    <div class="col-12 col-md-6 col-lg-4 mb-4">
-      <div class="doctor-card">
-        <div class="doctor-image">
-          <img src="./Images/doctors/doctor-12.png" class="img-fluid" alt="" />
-          <div class="span-department">
-            <span class="department">Psychiatry Department</span>
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+              <div class="doctor-card">
+                <div class="doctor-image">
+                  <img
+                    src="./Images/doctors/doctor-12.png"
+                    class="img-fluid"
+                    alt=""
+                  />
+                  <div class="span-department">
+                    <span class="department">Psychiatry Department</span>
+                  </div>
+                </div>
+                <div class="doctor-description">
+                  <div class="doctor-name">
+                    <h3>Dr. Maria Rodriguez, MD</h3>
+                  </div>
+                  <div class="doctor-pos">Psychiatrist</div>
+                  <div class="doctor-paragraph">
+                    <p>
+                      Dr. Chen is a skilled psychiatrist with expertise in the
+                      treatment of mood disorders and psychotic disorders. She
+                      is board-certified in psychiatry and has a special
+                      interest in the management.
+                    </p>
+                  </div>
+                  <div class="doctor-socials">
+                    <img src="./Images/doctors/doctor-facebook.png" alt="" />
+                    <img src="./Images/doctors/doctor-linkedin.png" alt="" />
+                    <img src="./Images/doctors/doctor-twitter.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="doctor-description">
-          <div class="doctor-name"><h3>Dr. Maria Rodriguez, MD</h3></div>
-          <div class="doctor-pos">Psychiatrist</div>
-          <div class="doctor-paragraph">
-            <p>
-              Dr. Chen is a skilled psychiatrist with expertise in the treatment
-              of mood disorders and psychotic disorders. She is board-certified
-              in psychiatry and has a special interest in the management.
-            </p>
-          </div>
-          <div class="doctor-socials">
-            <img src="./Images/doctors/doctor-facebook.png" alt="" />
-            <img src="./Images/doctors/doctor-linkedin.png" alt="" />
-            <img src="./Images/doctors/doctor-twitter.png" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
         <div class="page-options">
           <div class="pages-bar">
             <div class="arrow">
@@ -475,12 +550,10 @@
     </div>
     <div class="faded-container">
       <div class="faded-elements">
-
         <div class="faded-image">
           <img src="./Images/doctors/faded-doctor.jpg" alt="" />
-          
         </div>
-      
+
         <div class="faded-text">
           <div class="faded-heading">
             <h3>Don’t let Your Health Take a backseat</h3>
@@ -492,7 +565,7 @@
             </p>
           </div>
         </div>
-        </div>
+      </div>
     </div>
     <div class="footer-panels">
       <div class="footer-section">
