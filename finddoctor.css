@@ -265,31 +265,29 @@
 }
 
 .doctor-panels{
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 3.8rem;
+  margin-right: 3.8rem;
 }
 .options{  
   display: flex;
   flex-direction: row;
   justify-content:space-between;
-  gap: 20px;
 }
 .box-options{
   display: flex;
-  flex-direction: row;
-  gap: 29px;
+  gap: 1.82rem;
 }
 .box-options ul{
   list-style-type: none;
-display: flex;
-  flex-direction: row;
+  display: flex;
   gap: 20px;
   padding:0px;
+  margin: 0;
 }
 .sort-div{
-  height:26px;
-  margin-top: 12px;
-  margin-left: 12px;
+  height: 1.6rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
 .sort-by{
   font-family: var(--Poppins);
@@ -324,6 +322,7 @@ display: flex;
   font-size: 16px;
   color: var(--Celtic-Blue);
   padding: 13px 26px 14px 27px;
+  white-space: nowrap;
 }
 .button-options:hover{
   background-color: var(--Celtic-Blue);
@@ -383,6 +382,77 @@ transform: translateY(10px);
 .view-toggle-btn:hover .view-icon {
   color: var(--Celtic-Blue);
 }
+@media (max-width: 1200px) {
+  .options {
+    margin-right: 7rem;
+    margin-left: 4rem;
+    justify-content: space-around;
+  }
+  .box-options ul {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+  }
+  .button-options {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+    padding: 10px 20px;
+  }
+  .menu-buttons {
+    gap: 20px;
+  }
+  .menu-span {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+  }
+}
+
+@media (max-width: 992px) {
+  .options {
+    margin-right: 2rem !important;
+    margin-left: 3rem !important;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .box-options ul {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+    gap: 12px;
+  }
+  .sort-div {
+    margin-left: 1% !important;
+    align-items: center;
+    white-space: nowrap;
+  }
+  .button-options {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+    padding: 8px 16px;
+  }
+  .menu-span {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+  }
+}
+
+@media (max-width: 768px) {
+  .options {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+    flex-direction: row;
+    align-items: center;
+  }
+  .box-options ul {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+  }
+  .menu-buttons {
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .button-options {
+    width: 100%;
+    /* font-size: clamp(10px, 2.5vw, 12px); */
+    flex-wrap: wrap;
+    max-width: 220px;
+    text-align: center;
+  }
+}
+
 
 .doctor-grid{
   display: grid;
@@ -533,15 +603,16 @@ background: linear-gradient(
   /* margin-left: 3% !important; */
   /* gap: 5% !important; */
 /* } */
-.box-options ul{
+/* .box-options ul{
   gap: 2% !important;
-}
-.sort-div{
+  
+} */
+/* .sort-div{
   margin-left: 6% !important;
   margin-top: 1% !important;
   white-space:nowrap;
-}
-.All{
+} */
+/* .All{
   width:90% !important;
 }
 .Cardiology{
@@ -568,7 +639,7 @@ background: linear-gradient(
   height: 100% !important;
   font-size: 14px !important;
   padding: 13px 26px 14px 23px;
-}
+} */
 
 
 
