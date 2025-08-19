@@ -3,6 +3,15 @@ html, body {
    max-height: 100vh;
     overflow-x: hidden;
   }
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+     padding-right: 0px; 
+     padding-left: 0px; 
+    margin-right: auto;
+    margin-left: auto;
+}
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
@@ -55,56 +64,36 @@ html, body {
     src: url(./fonts/Inter/static/Inter_28pt-Regular.ttf) format('truetype');
     font-weight: 400;
 }
-.container-1{
+container{
     max-width:1296px;
     box-sizing:border-box;
+    padding:0px;
 }
 @media (max-width:1200){
-    .container-1{
+    container{
         max-width: 100%;
     }
 }
 @media (max-width:992){
-    .container-1{
+    container{
         max-width: 100%;
     }
 }
 @media (max-width:768){
-    .container-1{
+    container{
         max-width: 100%;
     }
 }
 @media (max-width:576px){
-    .container-1{
+    container{
         max-width: 100%;
     }
 }
 .container-xl{
-  max-width: 100%;
-  justify-content: center;
+  max-width: 1440px;
 }
 
-@media (max-width:1200px){
-    .container-xl{
-        max-width: 100%;
-    }
-}   
-@media (max-width:992px){
-    .container-xl{
-        max-width: 100%;
-    }
-}
-@media (max-width:768px){
-    .container-xl{
-        max-width: 100%;
-    }
-}
-@media (max-width:576px){
-    .container-xl{
-        max-width: 100%;
-        margin: 1px 1px; 
-    }
-}
+
 :root{
     --Poppins:"Poppins";
     --Inter:"Inter";
@@ -139,3 +128,24 @@ h2{
 .expert-doctor-socials{
     color: var(--Baby-Blue-Eyes);
 }
+/* @media (max-width:1200px){
+    .container-xl{
+        max-width: 100%;
+    }
+}   
+@media (max-width:992px){
+    .container-xl{
+        max-width: 100%;
+    }
+}
+@media (max-width:768px){
+    .container-xl{
+        max-width: 100%;
+    }
+}
+@media (max-width:576px){
+    .container-xl{
+        max-width: 100%;
+        margin: 1px 1px; 
+    }
+} */
