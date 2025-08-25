@@ -1,5 +1,10 @@
-
-
+.file{
+  background: #F8FBFF;
+}
+.navigation {
+  margin-left: 73px;
+  margin-right: 72px;
+}
 .navbar-custom {
   width: 100%;
   height: 100px;
@@ -116,7 +121,7 @@
   
 }
 .hero-content{
-  margin-top: 66px;
+  margin-top: 7px;
     display:flex;
     flex-direction: row;
     gap:231px;

@@ -3,7 +3,9 @@ html, body {
    max-height: 100vh;
     overflow-x: hidden;
   }
-
+ .container-fluid{
+    padding: 0px;
+ }
 @font-face {
     font-family: 'Poppins';
     src: url(./fonts/Poppins/Poppins-Bold.ttf) format('truetype');
@@ -60,6 +62,7 @@ html, body {
     max-width:1440px;
     width: 100%;
     padding:0px;
+    margin: 0 auto;
 }
 
 :root{
